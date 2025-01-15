@@ -11,6 +11,7 @@ public class Bike {
 
     private String brand;
     private String model;
+    private int userId;
 
     public String getBrand() {
         return brand;
@@ -26,5 +27,13 @@ public class Bike {
 
     public void setModel(String model) {
         this.model = model;
+    }
+
+    public int getUserId() {
+        return userId;
+    }
+
+    public void setUserId(int userId) {
+        this.userId = userId;
     }
 }

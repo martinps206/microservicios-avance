@@ -7,15 +7,14 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-@FeignClient(name = "car", url = "http://localhost:8002")
-@RequestMapping("/car")
-public interface CarFeignClient {
+@FeignClient(name = "bike", url = "http://localhost:8003")
+@RequestMapping("/bike")
+public interface BikeFeignClient {
 
     @PostMapping()
-    Car save(@RequestBody Car car);
+    Bike save(@RequestBody Bike bike);
 
     @GetMapping("/byuser/{userId}")
-    List<Car> getCars(@PathVariable("userId") int userId);
-
+    List<Bike> getBikes(@PathVariable("userId") int userId);
 
 }
