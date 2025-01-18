@@ -25,9 +25,7 @@ public class Bike {
         return model;
     }
 
-    public void setModel(String model) {
-        this.model = model;
-    }
+    public void setModel(String model) { this.model = model; }
 
     public int getUserId() {
         return userId;
